@@ -27,7 +27,7 @@ requirements:
     - gettext
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ cdt('libudev') }}  # [linux]    
+    # - {{ cdt('libudev') }}  # [linux]    
   host:
     - libjpeg-turbo
     - libpng
