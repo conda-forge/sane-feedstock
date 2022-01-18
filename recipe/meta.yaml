@@ -10,7 +10,7 @@ source:
   sha256: 3a28c237c0a72767086202379f6dc92dbb63ec08dfbab22312cba80e238bb114
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('sane', max_pin='x.x') }}
@@ -27,7 +27,8 @@ requirements:
     - gettext
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ cdt('libudev') }}  # [linux]    
+    # - {{ cdt('libudev') }}  # [linux]
+    - sysroot_linux-64 2.17  # [linux64]
   host:
     - libjpeg-turbo
     - libpng
