@@ -25,18 +25,10 @@ libtiff:
 libxml2:
 - '2.9'
 pin_run_as_build:
-  libjpeg_turbo:
-    max_pin: x
-  libpng:
-    max_pin: x.x
-  libtiff:
-    max_pin: x
-  libxml2:
-    max_pin: x.x
   poppler:
     max_pin: x.x
 poppler:
-- '22.04'
+- '22.10'
 target_platform:
 - linux-64
 zip_keys:
