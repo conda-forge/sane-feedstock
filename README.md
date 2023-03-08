@@ -1,11 +1,11 @@
-About sane
-==========
+About sane-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sane-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.sane-project.org
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sane-feedstock/blob/main/LICENSE.txt)
 
 Summary: SANE - Scanner Access Now Easy
 
