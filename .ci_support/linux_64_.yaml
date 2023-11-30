@@ -23,7 +23,7 @@ libpng:
 libtiff:
 - '4.5'
 libxml2:
-- '2.11'
+- '2.12'
 pin_run_as_build:
   poppler:
     max_pin: x.x
