@@ -38,12 +38,6 @@ requirements:
     - glib
     - poppler
   run:
-    - libjpeg-turbo
-    - libpng
-    - libusb
-    - libtiff    
-    - libxml2
-    - glib
     - poppler
 
 test:
