@@ -17,11 +17,11 @@ docker_image:
 glib:
 - '2'
 libjpeg_turbo:
-- 2.1.5
+- '3'
 libpng:
 - '1.6'
 libtiff:
-- '4.5'
+- '4.6'
 libxml2:
 - '2.12'
 pin_run_as_build:
