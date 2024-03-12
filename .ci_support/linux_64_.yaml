@@ -17,18 +17,18 @@ docker_image:
 glib:
 - '2'
 libjpeg_turbo:
-- 2.1.5
+- '3'
 libpng:
 - '1.6'
 libtiff:
-- '4.5'
+- '4.6'
 libxml2:
-- '2.11'
+- '2'
 pin_run_as_build:
   poppler:
     max_pin: x.x
 poppler:
-- '23.07'
+- '24.03'
 target_platform:
 - linux-64
 zip_keys:
