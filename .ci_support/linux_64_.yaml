@@ -27,7 +27,7 @@ libpng:
 libtiff:
 - '4.7'
 libxml2:
-- '2'
+- '2.13'
 poppler:
 - '24.12'
 target_platform:
