@@ -10,7 +10,7 @@ source:
   sha256: 3a28c237c0a72767086202379f6dc92dbb63ec08dfbab22312cba80e238bb114
 
 build:
-  number: 20
+  number: 21
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('sane', max_pin='x.x') }}
@@ -35,7 +35,7 @@ requirements:
     - libpng
     - libusb
     - libtiff
-    - libxml2
+    - libxml2-devel
     - glib
     - poppler
   run:
@@ -43,7 +43,7 @@ requirements:
     - libpng
     - libusb
     - libtiff    
-    - libxml2
+    - libxml2-devel
     - glib
     - poppler
 
