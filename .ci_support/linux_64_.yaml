@@ -29,7 +29,7 @@ libtiff:
 libxml2_devel:
 - '2.14'
 poppler:
-- '25.11'
+- '25.12'
 target_platform:
 - linux-64
 zip_keys:
