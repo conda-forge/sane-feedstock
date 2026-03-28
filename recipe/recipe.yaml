@@ -29,7 +29,9 @@ requirements:
     - pkg-config
     - sed
   host:
+    - avahi
     - glib
+    - libcurl
     - libjpeg-turbo
     - libpng
     - libtool
