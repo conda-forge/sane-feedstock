@@ -6,6 +6,7 @@ export CFLAGS="${CFLAGS} -Wno-implicit-function-declaration"
 
 export ACLOCAL_PATH=${PREFIX}/share/aclocal
 export ACLOCAL_FLAGS="-I ${PREFIX}/share/aclocal"
+export PYTHON=${BUILD_PREFIX}/bin/python
 
 ./autogen.sh
 ./configure --prefix=$PREFIX --enable-local-backends --without-gphoto2 --with-usb=yes
