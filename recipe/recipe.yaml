@@ -40,6 +40,11 @@ requirements:
     - libxml2-devel
     - if: osx
       then: libintl-devel
+  run:
+    - avahi
+  ignore_run_exports:
+    from_package:
+      - libintl-devel
   run_exports:
     - ${{ pin_subpackage('sane', upper_bound='x.x') }}
 
