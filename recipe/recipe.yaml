@@ -23,6 +23,7 @@ requirements:
     - autoconf
     - autoconf-archive
     - automake
+    - curl
     - gettext-tools
     - grep
     - make
