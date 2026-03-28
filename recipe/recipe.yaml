@@ -24,6 +24,7 @@ requirements:
     - autoconf-archive
     - automake
     - gettext-tools
+    - grep
     - make
     - pkg-config
     - sed
