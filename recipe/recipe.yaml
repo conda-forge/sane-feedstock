@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://gitlab.com/sane-project/backends/-/archive/${{ version }}/backends-${{ version }}.tar.gz
-  sha256: 3a28c237c0a72767086202379f6dc92dbb63ec08dfbab22312cba80e238bb114
+  sha256: 9c50ee76e35d98d7ae0cbb97d4c2a3c15663a78fdd74b0ed2bf2fe8e1a73f63a
 
 build:
   number: 0
