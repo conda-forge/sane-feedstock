@@ -28,6 +28,7 @@ requirements:
     - grep
     - make
     - pkg-config
+    - python >=${{ python_min }}
     - sed
   host:
     - avahi
