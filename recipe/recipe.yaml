@@ -26,6 +26,7 @@ requirements:
     - gettext-tools
     - make
     - pkg-config
+    - sed
   host:
     - glib
     - libjpeg-turbo
