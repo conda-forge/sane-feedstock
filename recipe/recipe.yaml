@@ -1,0 +1,62 @@
+schema_version: 1
+
+context:
+  version: "1.4.0"
+
+package:
+  name: sane
+  version: ${{ version }}
+
+source:
+  url: https://gitlab.com/sane-project/backends/-/archive/${{ version }}/backends-${{ version }}.tar.gz
+  sha256: 3a28c237c0a72767086202379f6dc92dbb63ec08dfbab22312cba80e238bb114
+
+build:
+  number: 0
+  skip: win
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+    - ${{ compiler('cxx') }}
+    - autoconf
+    - autoconf-archive
+    - automake
+    - gettext-tools
+    - make
+    - pkg-config
+  host:
+    - glib
+    - libjpeg-turbo
+    - libpng
+    - libtool
+    - libtiff
+    - libusb
+    - libxml2-devel
+    - poppler
+    - if: osx
+      then: libintl-devel
+  run_exports:
+    - ${{ pin_subpackage('sane', upper_bound='x.x') }}
+
+tests:
+  - script:
+      - test -f $PREFIX/lib/libsane${SHLIB_EXT}
+
+about:
+  license: LGPL-2.1-only
+  license_file: COPYING
+  summary: SANE - Scanner Access Now Easy
+  description: |
+    SANE stands for "Scanner Access Now Easy" and is an application
+    programming interface (API) that provides standardized access to
+    any raster image scanner hardware (flatbed scanner, hand-held
+    scanner, video- and still-cameras, frame-grabbers, etc.).
+  homepage: http://www.sane-project.org
+  repository: https://gitlab.com/sane-project/backends
+  documentation: http://www.sane-project.org/docs.html
+
+extra:
+  recipe-maintainers:
+    - izahn
