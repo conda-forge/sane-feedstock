@@ -31,15 +31,12 @@ requirements:
     - sed
   host:
     - avahi
-    - glib
-    - libcurl
     - libjpeg-turbo
     - libpng
     - libtool
     - libtiff
     - libusb
     - libxml2-devel
-    - poppler
     - if: osx
       then: libintl-devel
   run_exports:
